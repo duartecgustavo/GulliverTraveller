@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Importação CSS -->
+    <link rel="stylesheet" href="./styles/global.css">
+
+    <!-- Icone da aba no navegador -->
+    <link rel="icon" type="image/x-icon" href="./imagens/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- Bootstrap Icon  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+
+    <title>Gulliver Traveller</title>
+</head>
+
+<body class="container">
+    <!-- Acessibilidade libras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <!-- Acessibilidade libras -->
+
+    <!-- Trocar de lingua -->
+    <button class="buttonChangeLang" onClick="changeLanguage()"><img src="./imagens/trocar_lingua.png" alt=""></button>
+    <!-- Trocar de lingua -->
+
+    <header class="bg-primary">
+        <h1>HEADER</h1>
+    </header>
+
+
+    <main class="bg-warning">
+        <h1>BODY</h1>
+    </main>
+
+
+    <footer class="bg-danger">
+        <h1>FOOTER</h1>
+    </footer>
+</body>
+
+<!-- Importação JavaScript -->
+<script src="./index.js"></script>
+
+<!-- JavaScript Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+<!-- Acessibilidade libras -->
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+<!-- Trocar de lingua -->
+<script>
+    function changeLanguage() {
+        var elemento = document.getElementById('testeId');
+        var classes = elemento.className.split(' ');
+        var getIndexChangeLangOpenDyslexic = classes.indexOf('changeLangOpenDyslexic');
+        var getIndexChangeLangPoppins = classes.indexOf('changeLangPoppins');
+
+        if (classes[0] === 'changeLangOpenDyslexic') {
+            classes.push('changeLangPoppins');
+            classes.splice(getIndexChangeLangOpenDyslexic, 1)
+            elemento.className = classes.join();
+        } else {
+            classes.push('changeLangOpenDyslexic');
+            classes.splice(getIndexChangeLangPoppins, 1)
+            elemento.className = classes.join();
+        }
+    }
+</script>
+
+</html>
