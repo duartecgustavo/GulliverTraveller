@@ -5,40 +5,6 @@
   src: url("../fonts/OpenDyslexic2/OpenDyslexic-Regular.otf");
 }
 
-/* Trocar de lingua */
-
-.changeLangOpenDyslexic {
-  font-family: "OpenDyslexic", "Poppins", sans-serif !important;
-}
-
-.changeLangPoppins {
-  font-family: "Poppins", sans-serif !important;
-}
-
-.buttonChangeLang {
-  height: 40px;
-  width: 40px;
-  position: fixed;
-  border-radius: 50%;
-  border-style: none !important;
-  box-shadow: 0px 0px 5px rgb(0, 0, 0);
-  background-color: #000;
-  right: 0;
-  top: 25%;
-  margin-right: 5px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.buttonChangeLang>img {
-  width: 80%;
-}
-
-/* Trocar de lingua */
-
 * {
   padding: 0;
   margin: 0;
@@ -53,15 +19,21 @@ body {
   background-position: center center;
 }
 
-.access-button {
-  box-shadow: 0px 0px 5px rgb(0, 0, 0);
-  border-radius: 50px !important;
-  border: 0px;
+p {
+  margin-bottom: 0px !important;
 }
 
-/* FIM LIBRAS */
+h4 {
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.29);
+  font-weight: bold;
+}
 
-/* INICIO NAVBAR */
+textarea {
+  border: 1px solid #76b3e6 !important;
+  min-height: 100px !important;
+}
+
+/* NAVBAR */
 nav {
   width: 100%;
   padding: 0;
@@ -74,7 +46,7 @@ nav h2 {
 
 h2 a {
   text-decoration: none;
-  color: #0A2AF5;
+  color: #0a2af5;
 }
 
 nav ul {
@@ -87,7 +59,7 @@ ul li {
   list-style-type: none;
   display: inline-block;
   padding: 20px 30px;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 nav ul li:hover {
@@ -115,12 +87,11 @@ li a {
 }
 
 .responsive-bar h3 a {
-  color: #0A2AF5;
+  color: #0a2af5;
   text-decoration: none;
 }
 
 @media (max-width: 468px) {
-
   /*   nav {
    display:none;
   } */
@@ -142,7 +113,7 @@ li a {
     text-align: center;
     background: #cbced4;
     padding: 15px 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   h2.brand {
@@ -150,86 +121,23 @@ li a {
   }
 }
 
-/* FIM NAVBAR */
-/* Footer */
-.container_footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-width: 1px 0px 1px 0px;
-  border-color: #000;
-  border-style: solid;
+/* NAVBAR */
+
+/* IMAGENS */
+
+.ponto {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #000;
 }
 
-.container_footer>.size100 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-
-.size100 {
-  width: 100%;
-}
-
-.links>a {
-  text-decoration: none;
-  color: black;
-
-}
-
-.container_footer02 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-width: 0px 0px 0px 0px;
-  border-color: #000;
-  border-style: solid;
-  font-size: 8px;
-}
-
-.container_footer03 {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  font-size: 7px;
-  /*border-width: 0px 0px 1px 0px ;
-  border-color: #000;
-  border-style: solid*/
-
-}
-
-p {
-  margin-bottom: 0px !important;
-}
-
-/* REDES SOCIAIS */
-
-.section_redes {
-  display: flex;
-  flex-direction: column;
-
-  position: fixed;
-  top: 20%;
-  left: 0;
-  gap: 8px;
-
-  border-radius: 0px 8px 8px 0px;
-  padding: 8px;
-  background-color: #dcdcdc;
-}
-
-.img_redes {
-  height: 25px;
-  width: 25px;
-}
-
-/* REDES SOCIAIS */
+/* IMAGENS */
 
 /* FEEDBACK */
 
-.section_feedback>h4,
-.section_feedback>h5 {
+.section_feedback > h4,
+.section_feedback > h5 {
   text-align: center;
   margin-bottom: 0px !important;
 }
@@ -240,12 +148,12 @@ p {
   gap: 10px;
 }
 
-.container_feedback>img {
+.container_feedback > img {
   width: 100px;
   height: 100px;
 }
 
-.box_feedback>p {
+.box_feedback > p {
   font-size: 12px;
   margin-bottom: 8px !important;
   text-align: justify;
@@ -255,18 +163,40 @@ p {
 
 /* TEXT AREA */
 
-h4 {
-  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.29);
-  font-weight: bold;
-}
-
-textarea {
-  border: 1px solid #76b3e6 !important;
-  min-height: 100px !important;
-}
-
 .form-floating {
   min-height: 100px;
 }
 
 /* TEXT AREA */
+
+/* FOOTER */
+.container_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-width: 1px 0px 1px 0px;
+  border-color: #000;
+  border-style: solid;
+}
+
+.container_footer > .size100 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.size100 {
+  width: 100%;
+}
+
+.links > a {
+  text-decoration: none;
+  color: black;
+}
+
+.font-size-footer {
+  font-size: 10px;
+}
+
+/* FOOTER */
