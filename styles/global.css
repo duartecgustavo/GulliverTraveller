@@ -45,7 +45,6 @@ article {
   display: flex;
   width: 25%;
   align-items: baseline;
-
 }
 
 .ctnFlex {
@@ -71,12 +70,11 @@ article {
   right: 0;
 }
 
-.card-icon{
+.card-icon {
   justify-content: flex-end;
   right: 0;
   margin-left: 8vw;
 }
-
 
 .image-hotel {
   width: 50px;
