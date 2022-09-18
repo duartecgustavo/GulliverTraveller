@@ -10,12 +10,67 @@
   box-sizing: border-box;
 }
 
+header {
+  width: 100%;
+}
+
 body {
   background-image: url("../imagens/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
+  width: 100%;
+}
+
+article {
+  width: 100%;
+  display: flex;
+}
+
+.row2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  border-radius: 5px;
+  box-shadow: 7px 7px 13px 0 rgba(50, 50, 0.22);
+  padding: 20px;
+  margin: 20px;
+  background-color: blue;
+}
+
+.card-names {
+  display: flex;
+  align-items: center;
+}
+
+.card-icon {
+  display: flex;
+  align-items: center;
+}
+.image-hotel {
+  width: 50px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.coluna {
+  float: left;
+  width: 25%;
+}
+
+.fotinho {
+  width: 50%;
+  height: 50%;
 }
 
 p {
