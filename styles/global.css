@@ -53,3 +53,88 @@
   border: 0px;
 }
 /* FIM LIBRAS */
+
+/* INICIO NAVBAR */
+nav{
+  width:100%;
+  padding:0;
+  background:#cbced4;
+}
+
+nav h2{
+   float:left;
+}
+
+h2 a{
+  text-decoration:none;
+ color: #0A2AF5;
+}
+
+nav ul{
+  float:inherit;
+  margin:0;
+  padding:0;
+}
+
+ul li{
+  list-style-type:none;
+  display:inline-block;
+  padding:20px 30px;
+  transition: .5s;
+}
+
+nav ul li:hover{
+  background:#9aa5ee;
+  cursor:pointer;
+}
+
+li a{
+  text-decoration:none;
+  color:rgb(0, 0, 0);
+}
+
+.responsive-bar{
+  width:100%;
+  background: #cbced4;
+  padding: 10px 20px;
+  box-sizing:border-box;
+  display: none;
+}
+
+.responsive-bar h3{
+  margin:0;
+  padding: 3px 0;
+  float:left;
+}
+
+.responsive-bar h3 a{
+  color:#0A2AF5;
+  text-decoration:none;
+}
+
+@media (max-width: 468px){
+/*   nav {
+   display:none;
+  } */
+  .responsive-bar{
+    display:block;
+  }
+  nav h2{
+    display: block;
+    float: none;
+    }
+  nav ul{
+    float: none;
+  }
+  nav ul li{
+   display: block;
+    text-align: center;
+    background: #cbced4;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+  }
+  h2.brand{
+    display: none;
+  }
+}
+/* FIM NAVBAR */

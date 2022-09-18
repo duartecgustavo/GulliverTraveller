@@ -9,16 +9,20 @@
 
     <!-- Importação CSS -->
     <link rel="stylesheet" href="./styles/global.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <!-- Icone da aba no navegador -->
     <link rel="icon" type="image/x-icon" href="./imagens/favicon.png">
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
+
     <!-- Bootstrap Icon  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+
+
 
     <title>Gulliver Traveller</title>
 </head>
@@ -37,19 +41,24 @@
     <button class="buttonChangeLang" onClick="changeLanguage()"><img src="./imagens/trocar_lingua.png" alt=""></button>
     <!-- Trocar de lingua -->
 
-    <header class="bg-primary">
-        <h1>HEADER</h1>
-    </header>
+    <!-- Navbar / Menu Responsivo -->
+    <nav>
+        <h2 class="brand"><a href="#">Logo</a></h2>
+        <ul>
+          <li><a href="#">Hoteis</a></li>
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Depoimentos</a></li>
+          <li><a href="#">Imagens</a></li>
+        </ul>
+        <div style="clear:both"></div>
+      </nav>
+    
+      <div class="responsive-bar">
+        <h3 class="brand"><a href="#">Logo</a></h3>
+        <div style="clear:both"></div>
+      </div>    
+    <!-- Navbar / Menu Responsivo -->
 
-
-    <main class="bg-warning">
-        <h1>BODY</h1>
-    </main>
-
-
-    <footer class="bg-danger">
-        <h1>FOOTER</h1>
-    </footer>
 </body>
 
 <!-- Importação JavaScript -->
@@ -57,8 +66,8 @@
 
 <!-- JavaScript Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-    crossorigin="anonymous"></script>
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+</script>
 
 <!-- Acessibilidade libras -->
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
