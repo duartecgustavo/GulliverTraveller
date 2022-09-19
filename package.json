@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "projeto da facul",
   "main": "index.html",
-  "scripts": {},
+  "scripts": {
+    "start": "index.html"
+  },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "json": "^11.0.0",
     "nodejs": "^0.0.0"
   }
 }
