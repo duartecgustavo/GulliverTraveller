@@ -4,7 +4,7 @@
   "description": "projeto da facul",
   "main": "index",
   "scripts": {
-    "start": "index.html"
+    "start": "./index.html"
   },
   "keywords": [],
   "author": "",
