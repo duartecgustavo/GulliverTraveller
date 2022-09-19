@@ -1,10 +1,10 @@
 {
-  "name": "gulliver-traveller-app",
+  "name": "gulliver-traveller-app1",
   "version": "1.0.0",
   "description": "projeto da facul",
   "main": "index",
   "scripts": {
-    "start": "./index.html"
+    "start": "index.php"
   },
   "keywords": [],
   "author": "",
