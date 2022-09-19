@@ -2,14 +2,15 @@
   "name": "gulliver-traveller-app",
   "version": "1.0.0",
   "description": "projeto da facul",
-  "main": "index.html",
+  "main": "index",
   "scripts": {
-    "start": "index.html"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.18.1",
     "json": "^11.0.0",
     "nodejs": "^0.0.0"
   }
