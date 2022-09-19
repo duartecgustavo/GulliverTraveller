@@ -7,7 +7,6 @@ app.get('/', function (req, res) {
     res.sendFile(__dirname + "/index.html")
 })
 
-
 //localhost:8080
 app.listen(port, () => {
     console.info(`rodando a aplicação na ${port}`)
