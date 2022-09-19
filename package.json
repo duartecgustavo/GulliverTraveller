@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "projeto da facul",
   "main": "index",
-  "scripts": {},
+  "scripts": {
+    "start": "index.html"
+  },
   "keywords": [],
   "author": "",
   "license": "MIT",
