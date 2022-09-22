@@ -1,0 +1,14 @@
+/* NAVBAR */
+
+nav ul li:hover {
+  background: #76b3e6;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+  nav ul li {
+    display: flex;
+    justify-content: space-between;
+  }
+
+/* NAVBAR */
