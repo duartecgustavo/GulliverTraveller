@@ -8,10 +8,16 @@
 
     <!-- Importação CSS -->
     <link rel="stylesheet" href="../styles/global.css">
-    <link rel="stylesheet" href="../styles/mapa.css">
+    <link rel="stylesheet" href="../styles/hospedagem.css">
     <link rel="stylesheet" href="../styles/acessibilidade.css">
     <link rel="stylesheet" href="../styles/trocarLingua.css">
     <link rel="stylesheet" href="../styles/redesSociais.css">
+
+    <!-- < !-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Icone da aba no navegador -->
     <link rel="icon" type="image/x-icon" href="../imagens/favicon.png" />
 
@@ -23,7 +29,7 @@
     <!-- Bootstrap Icon  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css" />
 
-    <title>Gulliver Traveller App</title>
+    <title>Gulliver Traveller - Hospedagem</title>
 </head>
 
 <body class="container">
@@ -44,40 +50,60 @@
     </button>
     <!-- Trocar de lingua -->
 
-    <!-- redes sociais -->
+    <!-- Redes sociais -->
     <section class="section_redes">
         <a href=""><img class="img_redes" src="../imagens/redes_sociais/facebook.png" alt="" /></a>
         <a href=""><img class="img_redes" src="../imagens/redes_sociais/intagram.png" alt="" /></a>
         <a href=""><img class="img_redes" src="../imagens/redes_sociais/youtube.png" alt="" /></a>
         <a href=""><img class="img_redes" src="../imagens/redes_sociais/linkedin.png" alt="" /></a>
     </section>
-    <!-- redes sociais -->
+    <!-- Redes sociais -->
 
     <main class="mt-5 mb-5">
 
         <!-- Navbar / Menu Responsivo -->
-        <nav class="d-flex justify-content-between">
-            <div class="d-flex align-items-center">
-                <div class="">
-                    <img src="../imagens/logo.png" alt="logo">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <img src="../imagens/logo.png" alt="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./destino.html">Destino</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./dicas.html">Dicas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./hospedagem.html">Hospedagem</a>
+                        </li>
+                    </ul>
+                    <div class="navbar end">
+                        <ul class="navbar-nav gap-2">
+                            <li class="nav-item">
+                                <a href="#" target="_blank " rel="external"><img src="../imagens/icones/search.png"
+                                        alt="icone busca"></a>
+                            </li>
+                            <li>
+                                <a class="nav-link active" href="#">Fazer Login</a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank " rel="external"><img src="../imagens/icones/brazil.png"
+                                        alt="icone flag"></a>
+                                <a href="#" target="_blank " rel="external"><img
+                                        src="../imagens/icones/downward-arrow.png" alt="seta"></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <ul>
-                    <li><a href="#">Hoteis</a></li>
-                    <li><a href="#">Ofertas</a></li>
-                    <li><a href="#">Depoimentos</a></li>
-                    <li><a href="#">Imagens</a></li>
-                </ul>
-                <div style="clear:both"></div>
-            </div>
-            <div class="d-flex align-items-center">
-                <!-- <h1>Vai Corinthians</h1>; -->
             </div>
         </nav>
-
-        <div class="responsive-bar">
-            <h3 class="brand"><a href="#">Logo</a></h3>
-            <div style="clear:both"></div>
-        </div>
         <!-- Navbar / Menu Responsivo -->
 
         <section class="">
@@ -89,6 +115,146 @@
                 
                 </p>
         </section>
+
+        <!-- Nossas Sugestões -->
+        <h1 class="text-center">Nossas</h1>
+        <h1 class="text-center">Sugestões</h1>
+        <div class="container text-center mb-5">
+            <div class="row g-2">
+                <div class="col-6">
+                    <div class="p-3 border-transparent bg-transparent"><img
+                            src="../imagens/hospedagem/Hotel Salvador.jpg" class="img-fluid" alt="Hotel Meliouz"></div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3 border-transparent bg-transparent"><img src="../imagens/hospedagem/Hotel Ondina.jpg"
+                            class="img-fluid" alt="Hotel Ondina"></div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3 border-transparent bg-transparent"><img
+                            src="../imagens/hospedagem/Hotel Pernambuco.jpg" class="img-fluid" alt="Hotel Pernambuco">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3 border-transparent bg-transparent"><img src="../imagens/hospedagem/Hotel Campos.jpg"
+                            class="img-fluid" alt="Hotel Ondas"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Nossas Sugestões / Fim -->
+
+
+        <!-- Melhores Hospedagens -->
+        <h1 class="text-center">Melhores</h1>
+        <h1 class="text-center">Hospedagens</h1>
+        <div class="container text-center">
+            <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
+                <div class="col">
+                    <div class="p-3 border-transparent bg-transparent">
+                        <img src="../imagens/hospedagem/row1.jpg" class="img-fluid" alt="">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">Apê em São Paulo</li>
+                            <li class="list-inline-item">5<i class="fas fa-star"></i></li>
+                            <li class="">3 camas</li>
+                            <li class="">23-30 de Nov.</li>
+                            <li class="">R$ 280/noite</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border-transparent bg-transparent">
+                        <img src="../imagens/hospedagem/row2.jpg" class="img-fluid" alt="">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">Chalé Campos</li>
+                            <li class="list-inline-item">5<i class="fas fa-star"></i></li>
+                            <li class="">Campos do Jordão - SP</li>
+                            <li class="">1 cama</li>
+                            <li class="">29-15 de Dez.</li>
+                            <li class="">R$ 530/noite</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border-transparent bg-transparent">
+                        <img src="../imagens/hospedagem/row3.jpg" class="img-fluid" alt="">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">Hotel Vila Real</li>
+                            <li class="list-inline-item">4.5<i class="fas fa-star"></i></li>
+                            <li class="">Balneário Camboriú - SC</li>
+                            <li class="">1 cama</li>
+                            <li class="">29-15 de Dez.</li>
+                            <li class="">R$ 950/noite</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border-transparent bg-transparent">
+                        <img src="../imagens/hospedagem/row4.jpg" class="img-fluid" alt="">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">Cabana dos Pássaros</li>
+                            <li class="list-inline-item">4.8<i class="fas fa-star"></i></li>
+                            <li class="">Maceió - AL</li>
+                            <li class="">1 cama</li>
+                            <li class="">29-15 de Dez.</li>
+                            <li class="">R$ 660/noite</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border-transparent bg-transparent">
+                        <img src="../imagens/hospedagem/row1.jpg" class="img-fluid" alt="">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">Apê em São Paulo</li>
+                            <li class="list-inline-item">5<i class="fas fa-star"></i></li>
+                            <li class="">3 camas</li>
+                            <li class="">23-30 de Nov.</li>
+                            <li class="">R$ 280/noite</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border-transparent bg-transparent">
+                        <img src="../imagens/hospedagem/row2.jpg" class="img-fluid" alt="">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">Chalé Campos</li>
+                            <li class="list-inline-item">5<i class="fas fa-star"></i></li>
+                            <li class="">Campos do Jordão - SP</li>
+                            <li class="">1 cama</li>
+                            <li class="">29-15 de Dez.</li>
+                            <li class="">R$ 530/noite</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border-transparent bg-transparent">
+                        <img src="../imagens/hospedagem/row3.jpg" class="img-fluid" alt="">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">Hotel Vila Real</li>
+                            <li class="list-inline-item">4.5<i class="fas fa-star"></i></li>
+                            <li class="">Balneário Camboriú - SC</li>
+                            <li class="">1 cama</li>
+                            <li class="">29-15 de Dez.</li>
+                            <li class="">R$ 950/noite</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border-transparent bg-transparent">
+                        <img src="../imagens/hospedagem/row4.jpg" class="img-fluid" alt="">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">Cabana dos Pássaros</li>
+                            <li class="list-inline-item">4.8<i class="fas fa-star"></i></li>
+                            <li class="">Maceió - AL</li>
+                            <li class="">1 cama</li>
+                            <li class="">29-15 de Dez.</li>
+                            <li class="">R$ 660/noite</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Melhores Hospedagens -->
+
     </main>
 
 
@@ -142,7 +308,7 @@
 <!-- JavaScript Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
-    </script>
+</script>
 <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
 
 <!-- Acessibilidade libras -->
