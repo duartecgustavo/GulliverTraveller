@@ -136,6 +136,14 @@ nav ul li:hover {
 }
 
 /* IMAGENS */
+/*.imagens{
+background-image: url("../imagens/background.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-position: center center;
+width: 100%;
+}*/
 
 /* FEEDBACK */
 
