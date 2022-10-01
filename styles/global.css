@@ -119,10 +119,10 @@ nav ul li:hover {
   cursor: pointer;
 }
 
-  nav ul li {
-    display: flex;
-    justify-content: space-between;
-  }
+nav ul li {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* NAVBAR */
 
@@ -147,8 +147,8 @@ width: 100%;
 
 /* FEEDBACK */
 
-.section_feedback > h4,
-.section_feedback > h5 {
+.section_feedback>h4,
+.section_feedback>h5 {
   text-align: center;
   margin-bottom: 0px !important;
 }
@@ -159,12 +159,12 @@ width: 100%;
   gap: 10px;
 }
 
-.container_feedback > img {
+.container_feedback>img {
   width: 100px;
   height: 100px;
 }
 
-.box_feedback > p {
+.box_feedback>p {
   font-size: 12px;
   margin-bottom: 8px !important;
   text-align: justify;
@@ -191,7 +191,7 @@ width: 100%;
   border-style: solid;
 }
 
-.container_footer > .size100 {
+.container_footer>.size100 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -202,7 +202,7 @@ width: 100%;
   width: 100%;
 }
 
-.links > a {
+.links>a {
   text-decoration: none;
   color: black;
 }
@@ -212,3 +212,33 @@ width: 100%;
 }
 
 /* FOOTER */
+
+/* CARD EVENTOS */
+.button {
+  padding: 5px 5px 5px 50px;
+
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: start;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.button-azul {
+  background-color: #045CFA;
+}
+
+.button-laranja {
+  background-color: #D17E4F;
+}
+
+.button-verde {
+  background-color: #01BDAA;
+}
+
+.button-cinza {
+  background-color: #AFBDD3;
+}
+
+
+/* CARD EVENTOS */

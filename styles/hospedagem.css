@@ -6,11 +6,9 @@ nav ul li:hover {
   cursor: pointer;
 }
 
-  nav ul li {
-    display: flex;
-    justify-content: space-between;
-  }
+nav ul li {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* NAVBAR */
-
-
