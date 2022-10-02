@@ -20,3 +20,9 @@ function initMap() {
         Animation: google.maps.Animation.DROP
     });
 }
+
+$('.main-carousel').flickity({
+    // options
+    cellAlign: 'left',
+    contain: true
+});
