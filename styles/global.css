@@ -110,7 +110,6 @@ textarea {
   min-height: 100px !important;
 }
 
-
 /* NAVBAR */
 
 nav ul li:hover {
@@ -147,8 +146,8 @@ width: 100%;
 
 /* FEEDBACK */
 
-.section_feedback>h4,
-.section_feedback>h5 {
+.section_feedback > h4,
+.section_feedback > h5 {
   text-align: center;
   margin-bottom: 0px !important;
 }
@@ -159,12 +158,12 @@ width: 100%;
   gap: 10px;
 }
 
-.container_feedback>img {
+.container_feedback > img {
   width: 100px;
   height: 100px;
 }
 
-.box_feedback>p {
+.box_feedback > p {
   font-size: 12px;
   margin-bottom: 8px !important;
   text-align: justify;
@@ -191,7 +190,7 @@ width: 100%;
   border-style: solid;
 }
 
-.container_footer>.size100 {
+.container_footer > .size100 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -202,7 +201,7 @@ width: 100%;
   width: 100%;
 }
 
-.links>a {
+.links > a {
   text-decoration: none;
   color: black;
 }
@@ -214,31 +213,74 @@ width: 100%;
 /* FOOTER */
 
 /* CARD EVENTOS */
-.button {
-  padding: 5px 5px 5px 50px;
 
+.card-eventos > img {
+  border-radius: 10px 10px 0px 0px;
+}
+.card-eventos > button {
+  padding: 5px 5px 5px 50px;
   color: #fff;
   font-size: 20px;
   font-weight: bold;
   text-align: start;
   border-radius: 0px 0px 10px 10px;
+  border: none !important;
 }
 
 .button-azul {
-  background-color: #045CFA;
+  background-color: #045cfa;
 }
 
 .button-laranja {
-  background-color: #D17E4F;
+  background-color: #d17e4f;
 }
 
 .button-verde {
-  background-color: #01BDAA;
+  background-color: #01bdaa;
 }
 
 .button-cinza {
-  background-color: #AFBDD3;
+  background-color: #afbdd3;
 }
 
-
 /* CARD EVENTOS */
+
+/* BACKGROUNG HOME */
+
+.background {
+  height: 500px;
+  width: 100vw;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+
+  background-image: url("../imagens//home/backhroung-home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* BACKGROUNG HOME */
+
+/* BUSCAR VIAGEM AREA */
+.box-buscar-datas {
+  margin-top: 265px !important;
+  border-radius: 10px;
+  background-color: #a8ccf3;
+}
+
+.btn-buscar {
+  width: 100% !important;
+}
+
+.btn-rounded {
+  border-radius: 20px;
+  background-color: #0d6efd;
+  padding: 8px;
+  border: none !important;
+  color: #fff;
+  box-shadow: 3px 3px 5px 0px #000;
+}
+
+/* BUSCAR VIAGEM AREA */ ;
