@@ -110,13 +110,13 @@ textarea {
   min-height: 100px !important;
 }
 
-.pacotes-viagens{
+.pacotes-pai{
   width: 100%;
+  
 }
-
-.images-pacotes {
-
-
+.pacotes {
+display: inline-block;
+width: 33%;
 }
 
 
