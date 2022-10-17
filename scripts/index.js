@@ -16,9 +16,9 @@ btnSubscribe.addEventListener("click", async () => {
 
     function passLogin(email, senha) {
         if (email === txtEmail.value && senha === txtSenha.value) {
-            // window.location.href = 'index.html';
+            window.location.href = 'index.html';
         } else {
-            // alert("Login invalido")
+            alert("Login invalido")
         }
     }
 
