@@ -57,6 +57,11 @@ nav ul li {
   justify-content: space-between;
 }
 
+li > button {
+  border-radius: 50%;
+  border: none;
+}
+
 /* NAVBAR */
 
 /* FOOTER */

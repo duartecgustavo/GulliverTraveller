@@ -1,30 +1,54 @@
-import { loginToGulliverTraveller } from "./firebase/gulliver-traveler.js";
 import { getLogins } from "./firebase/gulliver-traveler.js";
-import { insertInContent } from "./getLogins.js";
 
-// LOGIN
-const txtEmail = document.getElementById("email_1");
-const txtSenha = document.getElementById("password_1");
-const btnSubscribe = document.getElementById("btnSubscribe");
 
-btnSubscribe.addEventListener("click", async () => {
+// Carregar mdados Usuraios
+
+const txtNome = document.getElementById("nome");
+const txtEmail = document.getElementById("email");
+const txtSenha = document.getElementById("senha");
+const txtAcesso = document.getElementById("acesso");
+const txtDataNascimento = document.getElementById("data_nascimento");
+const txtCidade = document.getElementById("cidade");
+
+userInfos();
+
+function userInfos() {
     const myItens = getLogins();
-    console.log("myItens", myItens)
+    myItens.then((doc) => doc.forEach((el) => completeData(el.data().nome, el.data().email, el.data().senha, el.data().acessos, el.data().data_nascimentos, el.data().cidade)));
+}
 
-    myItens.then((doc) => doc.forEach((el) => passLogin(el.data().email, el.data().senha)));
+function completeData(
+    nome
+    , email, senha, acesso, dataNascimento, cidade
+) {
+    console.log("foi")
+    txtNome.value = nome
+    txtEmail.value = email
+    txtSenha.value = senha
+    txtAcesso.value = acesso
+    txtDataNascimento.value = dataNascimento
+    txtCidade.value = cidade
+}
 
+// Verificação de sessão de login
 
-    function passLogin(email, senha) {
-        if (email === txtEmail.value && senha === txtSenha.value) {
-            window.location.href = 'index.html';
-        } else {
-            alert("Login invalido")
-        }
-    }
+var logado = false;
+console.log(localStorage.getItem("acesso"));
+if (localStorage.getItem("acesso") == "true") {
+    logado = true
+}
 
-    const loginId = loginToGulliverTraveller();
-    console.log("loginId", loginId)
+if (logado != true) {
+    alert("Você não esta autenticado!")
+    window.location.href = 'login.html';
+}
 
+// LOG OUT
+const btnLogout = document.getElementById("btnLogout");
+
+btnLogout.addEventListener("click", () => {
+    localStorage.setItem("acesso", false);
+    window.location.href = 'login.html';
 });
 
 // Initialize and add the map
