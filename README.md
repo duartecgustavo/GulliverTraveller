@@ -61,3 +61,10 @@ https://gulliver-traveller-v1.herokuapp.com/
 <div align="center"> <img width="100%" src="https://user-images.githubusercontent.com/65131471/197317296-ff69113a-951d-438c-a0e2-f9dad3d1012c.png"></div>
 <br/>
 <div align="center"> <img width="100%" src="https://user-images.githubusercontent.com/65131471/197317200-484ac5d8-2bcb-454c-a4e9-804de64cc219.png"></div>
+
+---
+
+<h3 align="left"> Equipe 👯‍♂️ </h3>
+Claudemir - Gustavo - Leila - Renata - Vinicius
+
+---
