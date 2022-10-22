@@ -31,7 +31,7 @@ Gulliver Traveller é um projeto de contrução de um site de turismo que busca 
 
 <br/>
 
-<h3 align="left"> Rotas: </h3>
+<h3 align="left"> Rotas 🧭 </h3>
 
 * Home/index
 * Hospedagem
@@ -43,7 +43,7 @@ Gulliver Traveller é um projeto de contrução de um site de turismo que busca 
 
 <br/>
 
-<h3 align="left"> Acessibilidade: </h3>
+<h3 align="left"> Acessibilidade 📤 </h3>
 
 Nosso site buscou ser acessivel de varias foras, trazemos o ELibras, opção de troca de fontes para OpenDyslexic além da preocupação com a paleta de cores presente e descrição em todas as imagens.
 
