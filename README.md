@@ -1,4 +1,4 @@
-<div align="center"> <img width="250px" src="https://user-images.githubusercontent.com/65131471/99868564-4bb85500-2ba2-11eb-8f59-0d3882add388.png"></div>
+<div align="center">![logo](https://user-images.githubusercontent.com/65131471/197316104-5bd46f6f-1735-481e-b945-650615434d67.png)</div>
 <p align="center"> Gulliver Traveller ✈️ </p>
 
 ---
