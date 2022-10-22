@@ -16,14 +16,13 @@ Gulliver Traveller é um projeto de contrução de um site de turismo que busca 
 
 <br/>
 
-<div align="center">
+<div align="left">
  <img width="50px" style="margin: 10px 40px 10px 40px;" src="https://user-images.githubusercontent.com/65131471/96186484-e07bc300-0f11-11eb-8314-b70c09429536.png">
  <img width="50px" style="margin: 10px 40px 10px 40px;" src="https://user-images.githubusercontent.com/65131471/96186499-e2458680-0f11-11eb-8e63-2c1531f0ac83.png">
  <img width="50px" style="margin: 10px 40px 10px 40px;" src="https://user-images.githubusercontent.com/65131471/99868358-a05ad080-2ba0-11eb-9366-23089497815b.png">
  <img width="50px" style="margin: 10px 40px 10px 40px;" src="https://user-images.githubusercontent.com/65131471/96186506-e5407700-0f11-11eb-958a-f1d2339a0074.png">
 </div>
 
-<br/>
 <br/>
 
 * Linguagem de marcação - HTML.
