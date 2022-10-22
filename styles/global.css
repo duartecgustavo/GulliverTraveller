@@ -39,6 +39,16 @@ textarea {
   min-height: 100px !important;
 }
 
+.pacotes-pai{
+  width: 100%;
+  
+}
+.pacotes {
+display: inline-block;
+width: 33%;
+}
+
+
 /* NAVBAR */
 
 .nav-link {
