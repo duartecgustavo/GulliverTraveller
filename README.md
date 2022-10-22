@@ -1,7 +1,5 @@
 <div align="center"> <img width="250px" src="https://user-images.githubusercontent.com/65131471/197316104-5bd46f6f-1735-481e-b945-650615434d67.png"></div>
 
----
-
 <h1 align="center"> Oque é? :bulb: </h1>
 
 <div align="center">
@@ -19,10 +17,11 @@ Gulliver Traveller é um projeto de contrução de um site de turismo que busca 
  <img width="50px" style="margin: 10px 40px 10px 40px;" src="https://user-images.githubusercontent.com/65131471/96186506-e5407700-0f11-11eb-958a-f1d2339a0074.png">
 </div>
 
+
 * Linguagem de marcação - HTML.
 * Design e Responsividade - CSS + Bootstrap.
 * Backend em Javascript + conexão com banco de dados Firebase.
 
 ---
 
-##Link🔗: https://gulliver-traveller-v1.herokuapp.com/
+Link🔗: https://gulliver-traveller-v1.herokuapp.com/
