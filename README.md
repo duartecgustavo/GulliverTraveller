@@ -8,7 +8,7 @@ Gulliver Traveller é um projeto de contrução de um site de turismo que busca 
 
 <br/>
 
-<div align="center"> <img width="100%" src="https://user-images.githubusercontent.com/65131471/197317030-02ba900b-1215-4451-8b8a-38617ec68f9e.png"></div>
+<div align="left"> <img width="100%" src="https://user-images.githubusercontent.com/65131471/197317030-02ba900b-1215-4451-8b8a-38617ec68f9e.png"></div>
 
 ---
 
@@ -32,7 +32,26 @@ Gulliver Traveller é um projeto de contrução de um site de turismo que busca 
 
 <br/>
 
-Link🔗: https://gulliver-traveller-v1.herokuapp.com/
+<h3 align="left"> Rotas: </h3>
+
+* Home/index
+* Hospedagem
+* Destino
+* Dicas
+* Login
+* Cadastro
+* Dados do usuario
+
+<br/>
+
+<h3 align="left"> Acessibilidade: </h3>
+
+Nosso site buscou ser acessivel de varias foras, trazemos o ELibras, opção de troca de fontes para OpenDyslexic além da preocupação com a paleta de cores presente e descrição em todas as imagens.
+
+---
+
+<h3 align="left"> Link: 🔗 </h3>
+https://gulliver-traveller-v1.herokuapp.com/
 
 ---
 
