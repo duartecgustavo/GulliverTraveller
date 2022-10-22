@@ -1,14 +1,14 @@
-<div align="center"> <img width="250px" src="https://user-images.githubusercontent.com/65131471/197316104-5bd46f6f-1735-481e-b945-650615434d67.png"></div>
+<div align="center"> <img width="150px" src="https://user-images.githubusercontent.com/65131471/197316104-5bd46f6f-1735-481e-b945-650615434d67.png"></div>
 
-<h1 align="center"> Oque é? :bulb: </h1>
+<h2 align="left"> Oque é? </h2>
 
-<div align="center">
+<div align="left">
 Gulliver Traveller é um projeto de contrução de um site de turismo que busca facilitar ao internauta a pesquisa e compra de pacotes de viagem. Além disso possui também dicas, fotos e sugestões de opção para o usuario.
 </div>
 
 ---
 
-<h1 align="center"> Técnologia utilizadas :dvd: </h1>
+<h3 align="left"> Técnologia utilizadas :dvd: </h3>
 
 <div align="center">
  <img width="50px" style="margin: 10px 40px 10px 40px;" src="https://user-images.githubusercontent.com/65131471/96186484-e07bc300-0f11-11eb-8314-b70c09429536.png">
