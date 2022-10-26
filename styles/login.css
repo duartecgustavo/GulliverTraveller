@@ -1,0 +1,36 @@
+body {
+    background-image: url("../imagens/login/paris1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.boxLogin{
+    background-color: rgba(245, 245, 220, 0.849);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.644);
+    padding: 10px 30px 40px 40px;
+    border: none !important;
+}
+
+.imputEmail {
+    width: 100% !important;
+}
+
+.contentLogins{
+    position: absolute;
+    top: 45%;
+    left: 0px;
+    z-index: 1;
+    border: 3px solid red;
+    background-color: aliceblue;
+}
+
+.visulizarSenha{
+    cursor: pointer;
+}
+.visulizarSenha > div{
+    transition: background-color 0.3s !important;
+}
+.visulizarSenha > div:hover{
+    background-color: #a8c6e4 !important;
+}
