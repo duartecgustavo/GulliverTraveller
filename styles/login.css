@@ -1,36 +1,143 @@
-body {
-    background-image: url("../imagens/login/paris1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-.boxLogin{
-    background-color: rgba(245, 245, 220, 0.849);
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.644);
-    padding: 10px 30px 40px 40px;
-    border: none !important;
+.boxLogin {
+  background-color: rgba(245, 245, 220, 0.849);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.644);
+  padding: 10px 30px 40px 40px;
+  border: none !important;
 }
 
 .imputEmail {
-    width: 100% !important;
+  width: 100% !important;
 }
 
-.contentLogins{
-    position: absolute;
-    top: 45%;
-    left: 0px;
-    z-index: 1;
-    border: 3px solid red;
-    background-color: aliceblue;
+/* DADOS DO USUARIO PARA LOGIN */
+
+.contentLogins {
+  position: absolute;
+  top: 0%;
+  left: 0px;
+  z-index: 1;
+  border: 3px solid red;
+  background-color: aliceblue;
 }
 
-.visulizarSenha{
-    cursor: pointer;
+/* Botão de visualizar senha */
+.visulizarSenha {
+  cursor: pointer;
 }
-.visulizarSenha > div{
-    transition: background-color 0.3s !important;
+.visulizarSenha > div {
+  transition: background-color 0.3s !important;
 }
-.visulizarSenha > div:hover{
-    background-color: #a8c6e4 !important;
+.visulizarSenha > div:hover {
+  background-color: #a8c6e4 !important;
+}
+
+/* Botão de carrossel de imagens login */
+
+.btnNextImage {
+  background-image: url("../imagens/arrowRight.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+  background-color: #a8c6e442;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 48%;
+  right: 20px;
+  z-index: 1;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.btnNextImage:hover {
+    background-color: #a8c6e483;
+  }
+  
+.btnBackImage {
+  background-image: url("../imagens/arrowLeft.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+  background-color: #a8c6e442;
+  border-radius: 50%;
+
+  position: absolute;
+  left: 20px;
+  top: 48%;
+  z-index: 1;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.btnBackImage:hover {
+  background-color: #a8c6e483;
+}
+
+/* Carrossel login */
+
+.imagem1 {
+  background-image: url("../imagens/login/imagem1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.imagem2 {
+  background-image: url("../imagens/login/imagem2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.imagem3 {
+  background-image: url("../imagens/login/imagem3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.imagem4 {
+  background-image: url("../imagens/login/imagem4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.imagem5 {
+  background-image: url("../imagens/login/imagem5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.imagem6 {
+  background-image: url("../imagens/login/imagem6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.imagem7 {
+  background-image: url("../imagens/login/imagem7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.imagem8 {
+  background-image: url("../imagens/login/imagem8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.imagem9 {
+  background-image: url("../imagens/login/imagem9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.imagem10 {
+  background-image: url("../imagens/login/imagem10.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }

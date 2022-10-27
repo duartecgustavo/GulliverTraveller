@@ -53,3 +53,28 @@ btnVisualizar.addEventListener("click", () => {
     imputPassword.type = "password";
   }
 });
+
+// Transicionar imagens área de login
+
+const btnNextImage = document.getElementById("btnNextImage");
+const btnBackImage = document.getElementById("btnBackImage");
+let tagBody = document.getElementById("body");
+let x = 1;
+
+btnNextImage.addEventListener("click", () => {
+  tagBody.classList.remove(`imagem${x}`);
+  x++;
+  if (x > 8) {
+    x = 1;
+  }
+  tagBody.classList.add(`imagem${x}`);
+});
+
+btnBackImage.addEventListener("click", () => {
+  tagBody.classList.remove(`imagem${x}`);
+  x--;
+  if (x < 1) {
+    x = 8;
+  }
+  tagBody.classList.add(`imagem${x}`);
+});

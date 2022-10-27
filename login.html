@@ -27,7 +27,7 @@
     <title>Projeto Traveller</title>
   </head>
 
-  <body>
+  <body class="imagem1" id="body">
     <div class="contentLogins"></div>
 
     <div
@@ -40,7 +40,7 @@
       >
         <img
           src="./imagens/logo.png"
-          alt="logo"
+          alt="Logo com escrita Gulliver Traveller e um planeta terra que é a marca de nosso site"
           style="height: 150px !important"
         />
 
@@ -71,7 +71,7 @@
             <div class="input-group-prepend visulizarSenha">
               <div class="input-group-text">
                 <img
-                  style="height: 20px;"
+                  style="height: 20px"
                   src="./imagens/visibilidade.png"
                   class="pointer visibilidade"
                   id="btnVisualizar"
@@ -90,8 +90,13 @@
           Efetuar Login <span class="fas fa-paper-plane"></span>
         </button>
         <!-- </form> -->
+        <a style="width: 100%; margin-top: 6px; text-align: center;" href=""
+          >Não tem cadastro? Clique aqui!</a
+        >
       </div>
     </div>
-    <script src="./scripts/sessionValidate.js" type="module"></script>
+    <div id="btnNextImage" class="btnNextImage"></div>
+    <div id="btnBackImage" class="btnBackImage"></div>
   </body>
+  <script src="./scripts/sessionValidate.js" type="module"></script>
 </html>
