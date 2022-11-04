@@ -16,9 +16,16 @@
 /* BACKGROUNG HOME */
 
 /* NAVBAR */
+
+.navbar-background{
+  background-color: #ffffff81;
+  border-radius: 6px;
+  padding: 10px;
+}
+
 nav ul li:hover {
-  background: #76b3e6;
-  border-radius: 10px;
+  background-color: #c7d0d89c !important;
+  border-radius: 2px;
   cursor: pointer;
 }
 
@@ -32,7 +39,8 @@ nav ul li {
 .box-buscar-datas {
   margin-top: 265px !important;
   border-radius: 10px;
-  background-color: #a8ccf3;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px black;
 }
 
 .btn-buscar {
@@ -50,6 +58,10 @@ nav ul li {
 /* BUSCAR VIAGEM AREA */
 
 /* CARD EVENTOS */
+.container-card-eventos{
+  margin: 100px 0px;
+}
+
 .card-eventos > img {
   border-radius: 10px 10px 0px 0px;
 }

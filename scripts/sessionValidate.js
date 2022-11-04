@@ -61,6 +61,11 @@ const btnBackImage = document.getElementById("btnBackImage");
 let tagBody = document.getElementById("body");
 let x = 1;
 
+setInterval(() => {
+  btnNextImage.click()
+  console.log("foi")
+}, 15000);
+
 btnNextImage.addEventListener("click", () => {
   tagBody.classList.remove(`imagem${x}`);
   x++;
