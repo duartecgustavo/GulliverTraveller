@@ -1,4 +1,10 @@
 /* BACKGROUNG HOME */
+
+.backgroundBack {
+  height: 500px;
+  width: 100vw;
+}
+
 .background {
   height: 500px;
   width: 100vw;
@@ -8,39 +14,40 @@
   top: 0;
   z-index: -1;
 
-  background-image: url("../imagens//home/backhroung-home.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url("../imagens//home/backhroung-home.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
+
+.background > div > h3 {
+  color: #ff813a;
+  font-weight: 900;
+}
+.background > div > p {
+  color: #1d6c7d;
+}
+.background > div > button {
+  color: #fff;
+  font-weight: 700;
+  background-color: #ff813a;
+  border-radius: 30px;
+  border: none;
+  padding: 5px 15px;
+}
 /* BACKGROUNG HOME */
-
-/* NAVBAR */
-
-.navbar-background{
-  background-color: #ffffff81;
-  border-radius: 6px;
-  padding: 10px;
-}
-
-nav ul li:hover {
-  background-color: #c7d0d89c !important;
-  border-radius: 2px;
-  cursor: pointer;
-}
-
-nav ul li {
-  display: flex;
-  justify-content: space-between;
-}
-/* NAVBAR */
 
 /* BUSCAR VIAGEM AREA */
 .box-buscar-datas {
   margin-top: 265px !important;
   border-radius: 10px;
   background-color: #ffffff;
-  box-shadow: 0px 0px 5px black;
+  box-shadow: 0px 2px 3px black;
 }
 
 .btn-buscar {
@@ -55,10 +62,15 @@ nav ul li {
   color: #fff;
   box-shadow: 3px 3px 5px 0px #000;
 }
+
+.btn-orange {
+  background-color: #ff813a !important;
+  color: #fff !important;
+}
 /* BUSCAR VIAGEM AREA */
 
 /* CARD EVENTOS */
-.container-card-eventos{
+.container-card-eventos {
   margin: 100px 0px;
 }
 
@@ -87,7 +99,7 @@ nav ul li {
 
 .link:hover {
   color: #cac8c8;
-} 
+}
 
 .button-laranja {
   background-color: #d17e4f;

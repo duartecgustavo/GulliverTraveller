@@ -1,7 +1,8 @@
-// import { getLogins } from "./firebase/gulliver-traveler.js";
+import { getLogins } from "./firebase/gulliver-traveler.js";
 
 // Carregar dados Usuraios
 
+const divNome = document.getElementById("nome");
 const txtNome = document.getElementById("nome");
 const txtEmail = document.getElementById("email");
 const txtSenha = document.getElementById("senha");
@@ -9,15 +10,27 @@ const txtAcesso = document.getElementById("acesso");
 const txtDataNascimento = document.getElementById("data_nascimento");
 const txtCidade = document.getElementById("cidade");
 
-// userInfos();
+userInfos();
 
-// function userInfos() {
-//     const myItens = getLogins();
-//     myItens.then((doc) => doc.forEach((el) => completeData(el.data().nome, el.data().email, el.data().senha, el.data().acessos, el.data().data_nascimentos, el.data().cidade)));
-// }
+function userInfos() {
+  const myItens = getLogins();
+
+  myItens.then((doc) =>
+    doc.forEach((el) =>
+      completeData(
+        el.data().nome,
+        el.data().email,
+        el.data().senha,
+        el.data().acessos,
+        el.data().data_nascimentos,
+        el.data().cidade
+      )
+    )
+  );
+}
 
 function completeData(nome, email, senha, acesso, dataNascimento, cidade) {
-  console.log("foi");
+  divNome.innerText = nome;
   txtNome.value = nome;
   txtEmail.value = email;
   txtSenha.value = senha;
@@ -42,7 +55,7 @@ if (logado != true) {
 // LOG OUT
 const btnLogout = document.getElementById("btnLogout");
 btnLogout.addEventListener("click", () => {
-    console.log("foi");
+  console.log("foi");
   localStorage.setItem("acesso", false);
   window.location.href = "login.html";
 });

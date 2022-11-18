@@ -98,6 +98,13 @@ li > button {
   border: none;
 }
 
+.navbar-background{
+  /* background-color: #ffffff81; */
+  border-radius: 6px;
+  padding: 10px;
+}
+
+
 /* NAVBAR */
 
 /* FOOTER */

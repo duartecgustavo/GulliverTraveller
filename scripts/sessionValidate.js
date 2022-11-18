@@ -62,8 +62,8 @@ let tagBody = document.getElementById("body");
 let x = 1;
 
 setInterval(() => {
-  btnNextImage.click()
-  console.log("foi")
+  btnNextImage.click();
+  console.log("foi");
 }, 15000);
 
 btnNextImage.addEventListener("click", () => {

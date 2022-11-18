@@ -8,7 +8,7 @@ const firebaseConfig = {
     storageBucket: "gullivertraveller-8d4a8.appspot.com",
     messagingSenderId: "748243008674",
     appId: "1:748243008674:web:d4ba353c14c0c381656bfb"
-};
+  };
 
 const app = initializeApp(firebaseConfig)
 

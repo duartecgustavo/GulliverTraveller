@@ -46,15 +46,19 @@
 
       <!-- Trocar de lingua -->
       <button class="buttonChangeLang" onClick="changeLanguage()">
-        <img src="./imagens/trocar_lingua.png" alt="botão para trocar a font da pagina" />
+        <img
+          src="./imagens/trocar_lingua.png"
+          alt="botão para trocar a font da pagina"
+        />
       </button>
       <!-- Trocar de lingua -->
 
-      <!-- Backgroung Home -->
-      <div class="background"></div>
+
+      
+
       <!-- Backgroung Home -->
 
-      <main class="mt-5 mb-5">
+      <main class="mb-5">
         <!-- Navbar / Menu Responsivo -->
         <nav class="navbar navbar-expand-lg navbar-background">
           <div class="container-fluid">
@@ -97,11 +101,11 @@
               </ul>
               <div class="navbar end">
                 <ul class="navbar-nav gap-2">
-                  <li class="nav-item d-flex align-items-center px-2">
+                  <!-- <li class="nav-item d-flex align-items-center px-2">
                     <a href="#" target="_blank" rel="external"
                       ><img src="./imagens/icones/search.png" alt="icone busca"
                     /></a>
-                  </li>
+                  </li> -->
                   <li class="d-flex align-items-center px-2">
                     <a class="nav-link active" href="./dados_usuario.html"
                       ><img
@@ -110,11 +114,12 @@
                         style="height: 34px"
                         alt=""
                     /></a>
+                    <div id="nome" name="nome"></div>
                   </li>
                   <li class="d-flex align-items-center gap-2 px-2">
                     <button id="btnLogout" type="submit">
                       <img
-                        src="./imagens/icones/brazil.png"
+                        src="./imagens/icones/sair.png"
                         style="height: 34px"
                         alt="icone flag"
                       />
@@ -127,12 +132,31 @@
         </nav>
         <!-- Navbar / Menu Responsivo -->
 
+              <!-- Backgroung Home -->
+      <div class="backgroundBack"></div>
+      <div class="background">
+        <div class="container">
+          <h3>
+            Viagem no <br />
+            Brasil
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit,
+            adipisicing elit. <br />
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit,
+            adipisicing elit. <br />
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
+          <button>LER MAIS</button>
+        </div>
+
+        
         <!-- Reservas -->
         <div class="box-buscar-datas row py-3">
           <div
             class="d-flex justify-content-start align-items-center gap-4 my-2"
           >
-            <h3 style="font-weight: bold">Reservas</h3>
+            <h3 style="font-weight: bold">Hospedagem</h3>
           </div>
           <div class="row my-2">
             <div class="col-lg-4 col-12">
@@ -176,69 +200,19 @@
               </select>
             </div>
             <div class="col-lg-1 col-12">
-              <button type="button" class="btn btn-primary">
-                Buscar
-              </button>
+              <button type="button" class="btn btn-orange">Buscar</button>
             </div>
           </div>
         </div>
         <!-- Reservas -->
+      </div>
 
-        <section class=""></section>
-
-        <!-- Card Eventos -->
-        <div class="container-card-eventos">
-          <div class="text-left" style="color: black">
-            <h1>Cultura e Gastronomia</h1>
-          </div>
-          <div class="row">
-            <div class="d-flex flex-column col-lg-6 col-12 card-eventos">
-              <img
-                src="./imagens/home/fotos_entretenimento/Teatro.png"
-                class=""
-                alt=" teatro"
-              />
-              <button class="button-azul">
-                <a class="link" href="./paginas/cultura.html"
-                  >Continuar Procurando</a
-                >
-              </button>
-            </div>
-            <div class="d-flex flex-column col-lg-6 col-12 card-eventos">
-              <img src="./imagens/home/fotos_entretenimento/Festival Culinaria.png" class="" alt="Culinaria">
-              <button class="button-laranja">Continuar Procurando</button>
-            </div>
-          </div>
-
-          <div class="text-left" style="color: black; margin-top: 50px;">
-            <h1>Vida noturna e Entretenimento</h1>
-          </div>
-
-          <div class="row">
-            <div class="d-flex flex-column col-lg-6 col-12 card-eventos">
-              <img
-                src="./imagens/home/fotos_entretenimento/Shows.png"
-                class=""
-                alt="balada"
-              />
-              <button class="button-verde">
-                <a class="link" href="./paginas/vida.html"
-                  >Continuar Procurando</a
-                >
-              </button>
-            </div>
-            <div class="d-flex flex-column col-lg-6 col-12 card-eventos">
-              <img
-                src="./imagens/home/fotos_entretenimento/Rio de Janeiro.png"
-                class=""
-                alt="Rio"
-              />
-              <button class="button-cinza">Continuar Procurando</button>
-            </div>
-          </div>
-        </div>
-        <!-- Card Eventos -->
-
+        <!-- Promoções -->
+        <section class="mt-5">
+          <img src="./imagens/home/card1_home.png" alt="" />
+        </section>
+        <!-- Promoções -->
+        
         <!-- Pacotes -->
         <section>
           <div class="mt-5">
@@ -459,7 +433,8 @@
   </body>
 
   <!-- Importação JavaScript -->
-  <script src="./scripts/index.js"></script>
+  <script src="./scripts/index.js" type="module"></script>
+
   <!-- Trocar de lingua -->
   <script src="./scripts/trocarLingua.js"></script>
 
