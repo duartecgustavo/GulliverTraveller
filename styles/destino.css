@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+
+h2,
+h4 {
+  font-family: "Titan One", "Poppins" !important;
+  color: #ff813a;
+}
+
 /* FEEDBACK */
 
 .section_feedback > h4,
@@ -102,4 +110,12 @@ article {
 .fotinho {
   width: 50%;
   height: 50%;
+}
+
+.btn_msg_destino {
+  padding: 10px;
+  background-color: #ff813a;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
 }

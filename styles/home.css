@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
 /* BACKGROUNG HOME */
 
 .backgroundBack {
@@ -15,26 +16,33 @@
   z-index: -1;
 
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  background-image: url("../imagens//home/backhroung-home.png");
+  background-image: url("../imagens/home/backhroung-home.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
+.background > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .background > div > h3 {
+  font-family: "Titan One", "Poppins" !important;
   color: #ff813a;
-  font-weight: 900;
 }
 .background > div > p {
   color: #1d6c7d;
+  font-weight: 700 !important;
 }
 .background > div > button {
   color: #fff;
   font-weight: 700;
+  width: 150px;
   background-color: #ff813a;
   border-radius: 30px;
   border: none;
@@ -44,7 +52,7 @@
 
 /* BUSCAR VIAGEM AREA */
 .box-buscar-datas {
-  margin-top: 265px !important;
+  margin-top: 330px !important;
   border-radius: 10px;
   background-color: #ffffff;
   box-shadow: 0px 2px 3px black;
@@ -113,3 +121,95 @@
   background-color: #afbdd3;
 }
 /* CARD EVENTOS */
+
+/* CARD EMAIL */
+.input_email {
+  padding: 10px;
+  width: 60%;
+  background-color: rgb(243, 240, 240) !important;
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+  box-shadow: 0px 2px 3px black;
+}
+
+.btn_button_email {
+  padding: 10px;
+  width: 20%;
+  background-color: #ff813a;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  box-shadow: 0px 2px 3px black;
+  color: #fff;
+  font-weight: 700;
+}
+
+.div_email {
+  display: flex;
+  justify-content: center;
+}
+
+/* CARD EMAIL */
+
+section > article {
+  border-radius: 20px;
+  height: 80%;
+  width: 100%;
+}
+section > article > p,
+h4 {
+  color: #ff813a;
+  font-family: "Titan One", "Poppins" !important;
+}
+
+.gallery {
+}
+
+.carrosel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.carrosel > div {
+  text-align: justify;
+  width: 85%;
+}
+
+.carrosel-bg-1 {
+  width: 33%;
+}
+.carrosel-bg-1 > div > img {
+  width: 100%;
+}
+.carrosel-bg-2 {
+  width: 33%;
+}
+.carrosel-bg-2 > div > img {
+  width: 100%;
+}
+.carrosel-bg-3 {
+  width: 33%;
+}
+.carrosel-bg-3 > div > img {
+  width: 100%;
+}
+.carrosel-bg-4 {
+  width: 33%;
+}
+.carrosel-bg-4 > div > img {
+  width: 100%;
+}
+.carrosel-bg-5 {
+  width: 33%;
+}
+.carrosel-bg-5 > div > img {
+  width: 100%;
+}
+.carrosel-bg-6 {
+  width: 33%;
+}
+.carrosel-bg-6 > div > img {
+  width: 100%;
+}
