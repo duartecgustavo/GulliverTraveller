@@ -8,8 +8,8 @@ Gulliver Traveller é um projeto de contrução de um site de turismo que busca 
 
 <br/>
 
-<div align="left"> <img width="100%" src="https://user-images.githubusercontent.com/65131471/197317030-02ba900b-1215-4451-8b8a-38617ec68f9e.png"></div>
-
+<div align="left"> <img width="100%" src="https://user-images.githubusercontent.com/65131471/203071279-a233e9c3-8930-4176-8259-fc941d4067eb.png"></div>
+<div align="left"> <img width="100%" src="https://user-images.githubusercontent.com/65131471/203071456-667d5f47-adee-4016-bcc0-d27f4d71f56e.png"></div>
 ---
 
 <h3 align="left"> Técnologia utilizadas :dvd: </h3>
