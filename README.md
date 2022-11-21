@@ -49,8 +49,12 @@ Nosso site buscou ser acessivel de varias foras, trazemos o ELibras, opção de 
 
 ---
 
-<h3 align="left"> Link: 🔗 </h3>
+<h4 align="left"> Link: 🔗 </h4>
 https://gulliver-traveller-v1.herokuapp.com/
+<h4 align="left">E-mail: </h4>
+teste@yahoo.com 
+<h4 align="left">Senha: </h4>
+12345 
 
 ---
 
