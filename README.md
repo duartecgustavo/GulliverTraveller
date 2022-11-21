@@ -58,10 +58,6 @@ teste@yahoo.com
 
 ---
 
-<div align="center"> <img width="100%" src="https://user-images.githubusercontent.com/65131471/197317252-cceee528-365c-4919-903a-21774873cbe6.png"></div>
+<div align="center"> <img width="100%" src="https://user-images.githubusercontent.com/65131471/203071717-5f2e9fea-6f3c-4655-b396-a34fb1f9736a.png"></div>
 <br/>
 <div align="center"> <img width="100%" src="https://user-images.githubusercontent.com/65131471/197317285-b6916b11-faa7-4fd2-88d3-18d7a146f63d.png"></div>
-<br/>
-<div align="center"> <img width="100%" src="https://user-images.githubusercontent.com/65131471/197317296-ff69113a-951d-438c-a0e2-f9dad3d1012c.png"></div>
-<br/>
-<div align="center"> <img width="100%" src="https://user-images.githubusercontent.com/65131471/197317200-484ac5d8-2bcb-454c-a4e9-804de64cc219.png"></div>
