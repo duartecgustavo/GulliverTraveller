@@ -110,9 +110,24 @@ li > button {
   border-radius: 6px;
   padding: 10px;
 }
-
-
 /* NAVBAR */
+
+/* Botão de visualizar senha */
+.visulizarSenha {
+  cursor: pointer;
+}
+.visulizarSenha > div {
+  transition: background-color 0.3s !important;
+}
+.visulizarSenha > div:hover {
+  background-color: #a8c6e4 !important;
+}
+/* Botão de visualizar senha */
+
+.campo_nome{
+  font-weight: 700;
+  text-shadow: 0px 0px 10px #ffffff;
+}
 
 /* FOOTER */
 

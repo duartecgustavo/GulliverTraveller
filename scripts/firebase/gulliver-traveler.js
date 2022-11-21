@@ -9,11 +9,10 @@ export async function getLogins() {
    return docsSnap
 }
 
-// export async function getInfos() {
-//    const db = getDatabase();
-//    var user;
-//    const snapshot = await get(ref(db, '/Usuario/' + ROBpwKYYJG2Sg55CUsSm))
-//    user = snapshot.val();
-//    console.log("user");
-//    return console.log("user", user);
-// }
+export async function getDestiny() {
+   const db = getFirestore()
+   const colRef = collection(db, 'Destinos')
+
+   const docsSnap = await getDocs(colRef);
+   return docsSnap
+}

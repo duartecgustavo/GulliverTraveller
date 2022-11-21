@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br"> 
+<html lang="pt-br">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="./styles/acessibilidade.css" />
     <link rel="stylesheet" href="./styles/trocarLingua.css" />
     <link rel="stylesheet" href="./styles/redesSociais.css" />
+    <link rel="stylesheet" href="./styles/dados_usuario.css" />
 
     <title>Projeto Traveller</title>
   </head>
@@ -78,35 +79,35 @@
               </li>
             </ul>
             <div class="navbar end">
-                <ul class="navbar-nav gap-2">
-                  <li class="d-flex align-items-center px-2">
-                    <a class="nav-link active" href="./dados_usuario.html"
-                      ><img
-                        src="./imagens/user.png"
-                        class="logo"
-                        style="height: 34px"
-                        alt=""
-                    /></a>
-                    <div id="nome" name="nome"></div>
-                  </li>
-                  <li class="d-flex align-items-center gap-2 px-2">
-                    <button id="btnLogout" type="submit">
-                      <img
-                        src="./imagens/icones/sair.png"
-                        style="height: 34px"
-                        alt="icone flag"
-                      />
-                    </button>
-                  </li>
-                </ul>
-              </div>
+              <ul class="navbar-nav gap-2">
+                <li class="d-flex align-items-center px-2">
+                  <a class="nav-link active" href="./dados_usuario.html"
+                    ><img
+                      src="./imagens/user.png"
+                      class="logo"
+                      style="height: 34px"
+                      alt=""
+                  /></a>
+                  <div id="nome" name="nome"></div>
+                </li>
+                <li class="d-flex align-items-center gap-2 px-2">
+                  <button id="btnLogout" type="submit">
+                    <img
+                      src="./imagens/icones/sair.png"
+                      style="height: 34px"
+                      alt="icone flag"
+                    />
+                  </button>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
       <!-- Navbar / Menu Responsivo -->
 
       <div class="my-5">
-        <div class="text-center mb-5">
+        <div class="text-center mb-2">
           <img
             src="./imagens/user.png"
             class="logo"
@@ -115,16 +116,14 @@
           />
           <!-- <img src="${Usuario.foto}" class="logo" alt=""> -->
           <h2 class="my-1">Olá</h2>
-          <p></p>
-          <p>Nivel de Usuario</p>
-          <p>
-            <a href="./cadastrar_usuario" class="btn btn-success btn-sm mr-2"
-              >Cadastrar novo usuario</a
-            >
-          </p>
+          <div class="box_usuario">
+            <p id="campo_nome_usuario"></p>
+            <p id="">-</p>
+            <p id="campo_nivel_usuario"></p>
+          </div>
         </div>
 
-        <p class="p-3 bg-info text-light meu__header">
+        <p class="p-3 text-light meu__header">
           Dados da conta
           <button class="btn btn-outline-light" id="alterar">
             <i class="fas fa-user-edit"></i> Alterar seus dados
@@ -140,9 +139,10 @@
                 <input
                   type="text"
                   class="form-control"
-                  id="nome"
+                  id="campo_nome"
                   name="nome"
                   value=""
+                  disabled
                 />
               </div>
             </div>
@@ -153,18 +153,20 @@
                 <div class="input-group mb-2">
                   <input
                     type="password"
-                    class="form-control senha"
+                    class="form-control"
                     id="senha"
                     name="senha"
                     value=""
                     placeholder="Sua nova senha"
+                    disabled
                   />
-                  <div class="input-group-prepend">
+                  <div class="input-group-prepend visulizarSenha">
                     <div class="input-group-text">
                       <img
                         style="height: 20px"
                         src="./imagens/visibilidade.png"
                         class="pointer visibilidade"
+                        id="btnVisualizar"
                         alt="Imagem para exibir senha"
                       />
                     </div>
@@ -185,6 +187,7 @@
                   id="email"
                   name="email"
                   value=""
+                  disabled
                 />
               </div>
             </div>
@@ -192,11 +195,14 @@
             <div class="col-12 col-sm-12 col-md-6">
               <div class="form-group">
                 <label for="acesso" class="titulos">Nivel de acesso</label>
-                <select class="form-control" id="acesso" name="acesso">
-                  <option value="">Selecione o nivel de acesso</option>
-                  <option value="U">Usuario</option>
-                  <option value="A" selected>Administrador</option>
-                </select>
+                <input
+                  type="acesso"
+                  class="form-control"
+                  id="acesso"
+                  name="acesso"
+                  value=""
+                  disabled
+                />
               </div>
             </div>
           </div>
@@ -209,11 +215,12 @@
                   >Data de Nascimento</label
                 >
                 <input
-                  type="date"
+                  type="text"
                   class="form-control"
                   id="data_nascimento"
                   name="data_nascimento"
                   value=""
+                  disabled
                 />
               </div>
             </div>
@@ -226,6 +233,7 @@
                   id="cidade"
                   name="cidade"
                   value=""
+                  disabled
                 />
               </div>
             </div>
@@ -235,30 +243,17 @@
           <div class="row">
             <div class="col-12 col-sm-12 col-md-6">
               <div class="form-group">
-                <label for="foto" class="titulos">Foto</label>
-                <input type="file" class="form-control" id="foto" name="foto" />
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-12 col-md-6">
-              <div class="form-group">
                 <label for="genero" class="titulos">Genero</label>
-                <select class="form-control" id="genero" name="genero">
-                  <option value="" selected>Selecione seu genero</option>
-                  <option value="1">Masculino</option>
-                  <option value="2">Feminino</option>
-                  <option value="3">Outros</option>
-                  <option value="4">Prefiro nao citar</option>
-                </select>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="genero"
+                  name="genero"
+                  value=""
+                  disabled
+                />
               </div>
             </div>
-          </div>
-
-          <!--  BotÃ£o Gravar alteraÃ§Ãµes -->
-          <div class="d-flex justify-content-end">
-            <button type="submit" class="btn btn-primary my-3" id="gravar">
-              Gravar Alteracoes
-            </button>
           </div>
         </form>
       </div>

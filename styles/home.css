@@ -161,6 +161,17 @@ h4 {
   font-family: "Titan One", "Poppins" !important;
 }
 
+/* Box Usuario */
+
+.box_usuario {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 700;
+}
+
+/* Box Usuario */
+
 .gallery {
 }
 
@@ -172,7 +183,7 @@ h4 {
   padding: 10px;
 }
 
-.carrosel > div {
+.carrosel > a {
   text-align: justify;
   width: 85%;
 }
@@ -180,36 +191,36 @@ h4 {
 .carrosel-bg-1 {
   width: 33%;
 }
-.carrosel-bg-1 > div > img {
+.carrosel-bg-1 > a > img {
   width: 100%;
 }
 .carrosel-bg-2 {
   width: 33%;
 }
-.carrosel-bg-2 > div > img {
+.carrosel-bg-2 > a > img {
   width: 100%;
 }
 .carrosel-bg-3 {
   width: 33%;
 }
-.carrosel-bg-3 > div > img {
+.carrosel-bg-3 > a > img {
   width: 100%;
 }
 .carrosel-bg-4 {
   width: 33%;
 }
-.carrosel-bg-4 > div > img {
+.carrosel-bg-4 > a > img {
   width: 100%;
 }
 .carrosel-bg-5 {
   width: 33%;
 }
-.carrosel-bg-5 > div > img {
+.carrosel-bg-5 > a > img {
   width: 100%;
 }
 .carrosel-bg-6 {
   width: 33%;
 }
-.carrosel-bg-6 > div > img {
+.carrosel-bg-6 > a > img {
   width: 100%;
 }

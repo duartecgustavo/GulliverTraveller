@@ -4,42 +4,47 @@ import { getLogins } from "./firebase/gulliver-traveler.js";
 const txtEmail = document.getElementById("email_1");
 const txtSenha = document.getElementById("password_1");
 const btnLogin = document.getElementById("btnLogin");
+const myItens = getLogins();
+const arrayUsers = [];
+
+myItens.then((doc) => {
+  myItens.then((doc) => doc.forEach((el) => handleArrayUsers(el.data())));
+});
+
+function handleArrayUsers(users) {
+  arrayUsers.push({ email: users.email, senha: users.senha, id: users.id });
+}
 
 localStorage.setItem("acesso", false);
+localStorage.setItem("idUser", '')
 
-btnLogin.addEventListener("click", async () => {
-  const myItens = getLogins();
-
-  myItens.then((doc) =>
-    doc.forEach((el) => passLogin(el.data().email, el.data().senha))
-  );
-
-  function passLogin(email, senha) {
-    if (email === txtEmail.value && senha === txtSenha.value) {
-      window.location.href = "index.html";
+btnLogin.addEventListener("click", () => {
+  arrayUsers.map(user => {
+    if(user.email === txtEmail.value && user.senha === txtSenha.value){
       localStorage.setItem("acesso", true);
-    } else {
-      alert("Login invalido");
+      localStorage.setItem("idUser",  user.id);
+      window.location.href = "index.html";
     }
-  }
+  })
 });
 
 // FIND USER
 
-const contentLogins = document.querySelector(".contentLogins");
+// const contentLogins = document.querySelector(".contentLogins");
 
-export function insertInContent(email, senha) {
-  const element = `
-      <p>Login: ${email}</p>
-      <p>Senha: ${senha}</p>
-  `;
-  contentLogins.insertAdjacentHTML("beforeend", element);
-}
+// export function insertInContent(email, senha) {
+//   const element = `
+//       <p>Login: ${email}</p>
+//       <p>Senha: ${senha}</p>
+//   `;
+//   contentLogins.insertAdjacentHTML("beforeend", element);
+// }
 
-const myItens = getLogins();
-myItens.then((doc) =>
-  doc.forEach((el) => insertInContent(el.data().email, el.data().senha))
-);
+// const myItens = getLogins();
+
+myItens.then((doc) => {
+  doc.forEach((el) => insertInContent(el.data().email, el.data().senha));
+});
 
 // Visualizar senha
 
@@ -63,7 +68,6 @@ let x = 1;
 
 setInterval(() => {
   btnNextImage.click();
-  console.log("foi");
 }, 15000);
 
 btnNextImage.addEventListener("click", () => {
